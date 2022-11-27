@@ -1,0 +1,40 @@
+{
+  "name": "decorate-web",
+  "version": "0.0.1",
+  "description": "Decorate é uma biblioteca TypeScript para desenvolvimento de interfaces web.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "build": "tsc",
+    "compile": "tsc --outDir dist/scripts scripts/compile.ts && node dist/scripts/compile.js",
+    "prepublish": "tsc && npm test",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gaizgrol/decorate-web.git"
+  },
+  "keywords": [
+    "typescript",
+    "web",
+    "library",
+    "front-end"
+  ],
+  "author": "Gabriel Izoton",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Gaizgrol/decorate-web/issues"
+  },
+  "homepage": "https://github.com/Gaizgrol/decorate-web#readme",
+  "bin": {
+    "decorate-compile": "./scripts/compile.js"
+  },
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/node": "^18.11.9"
+  }
+}
